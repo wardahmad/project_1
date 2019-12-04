@@ -1,4 +1,157 @@
-#p {
-    color: brown;
-    background-color: chartreuse;
+/*html {
+    overflow: hidden;
+}*/
+body{
+    margin: 0;
+    background-color: #1B1924;
+}
+
+#mainContainer{
+    display: flex;
+    flex-direction:column;
+}
+
+#hedar{
+    background-color:#1B1924;
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#playerinfo{
+    background-color:#1B1924;
+    width: 40%;
+}
+
+#gameBord{
+    background-color: #03353E;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 11%;
+
+}
+
+#footer{
+    background-color: #03353E;
+    display: flex;
+    justify-content: center;
+    /*////////////////////*/    
+}
+
+.firstRow, .secondRow, .thirdRow, .fourRow, .fiveRow, .sixRow{
+    display: flex;
+    /*flex-direction: row-reverse;*/
+    /*box-sizing: content-box;justify-content: space-around;*/
+    /*/////////////////////*/
+    /*flex-direction: column-reverse;
+    justify-content: space-between;*/
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    
+    
+}
+.firstRow:hover, .secondRow:hover, .thirdRow:hover, .fourRow:hover, .fiveRow:hover, .sixRow:hover{
+    background-color: #1B1924;
+}
+
+.firstR , .secondR , .thirdR , .fourR , .fiveR , .sixR{
+    width: 75px;
+    height: 75px;
+    background-color: #BCA18D;
+    border-radius: 50%;
+    display: flex;
+    margin: 6px; 
+}
+
+.green{
+    background-color: #D9AC2A;
+}
+
+.red{
+    background-color: #D50B53;
+}
+
+#player{
+    display: flex;
+    background-color:#1B1924;
+    justify-content: space-around;
+    height: 50%;
+    
+}
+
+#playerOne{
+    background-color: #D9AC2A;
+    border-radius: 5%;
+    width: 40%;
+    height: 80%;
+}
+
+#playerTwo{
+    background-color: #D50B53;
+    border-radius: 5%;
+    width: 40%;
+    height: 80%;
+}
+
+.imgFooter{
+    width :25px ;
+    height : 25px ;
+    margin: 5px;
+}
+
+.footSec{
+    display: flex;
+    align-content: center;
+    justify-content: right;
+}
+
+.phedar{
+    align-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #D9AC2A;
+    font-size: 20px;
+    align-content: center;
+}
+
+#restartB{
+    background-color: #BCA18D;
+    border: none;
+    color: #03353E;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#result{
+    display: flex;
+    justify-content: center;
+
+}
+
+.imgPla{
+    width :75px;
+    height: 90px;
+    margin-left: 7px;
+    border-radius: 10%;
+}
+
+.CartInfo , .resultP1 , .resultP2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: #1B1924;
+    margin-left:7px;;
+}
+
+#copyR{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #BCA18D;
+
 }
