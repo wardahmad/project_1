@@ -148,16 +148,6 @@ $(document).ready(function(){
             for (var i = 0; i < arr.length; i++){
                 for (var j = 0; j < arr[i].length; j++){
 
-                    //from right to left
-                    if (($(arr[i][j]).hasClass("green")) && ($(arr[i-1][j+1]).hasClass("green")) &&
-                    ($(arr[i-2][j+2]).hasClass("green")) && ($(arr[i-3][j+3]).hasClass("green"))){
-                        resultFun("Lord Voldemort won", ".resultP1");
-                    }
-                    if (($(arr[i][j]).hasClass("red")) && ($(arr[i-1][j+1]).hasClass("red")) &&
-                    $((arr[i-2][j+2]).hasClass("red")) && ($(arr[i-3][j+3]).hasClass("red"))){
-                        resultFun("Albus Dumbledore won :)", ".resultP2");
-                    }
-
 
                     //columns
                     if (($(arr[i][j]).hasClass("green")) && ($(arr[i][j+1]).hasClass("green")) &&
@@ -189,7 +179,18 @@ $(document).ready(function(){
                     if (($(arr[i][j]).hasClass("red")) && ($(arr[i+1][j+1]).hasClass("red")) &&
                     ($(arr[i+2][j+2]).hasClass("red")) && ($(arr[i+3][j+3]).hasClass("red"))){
                         resultFun("Albus Dumbledore won :)", ".resultP2");
-                    }                   
+                    }
+
+                    //from right to left
+                    if (($(arr[i][j]).hasClass("green")) && ($(arr[i-1][j+1]).hasClass("green")) &&
+                    ($(arr[i-2][j+2]).hasClass("green")) && ($(arr[i-3][j+3]).hasClass("green"))){
+                         resultFun("Lord Voldemort won", ".resultP1");
+                        }
+                    if (($(arr[i][j]).hasClass("red")) && ($(arr[i-1][j+1]).hasClass("red")) &&
+                        $((arr[i-2][j+2]).hasClass("red")) && ($(arr[i-3][j+3]).hasClass("red"))){
+                        resultFun("Albus Dumbledore won :)", ".resultP2");
+                        }
+                                       
                 }
             }           
     });
