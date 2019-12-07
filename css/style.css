@@ -37,17 +37,17 @@ body{
     justify-content: center;
 }
 
-.firstRow, .secondRow, .thirdRow, .fourRow, .fiveRow, .sixRow{
+.firstCol, .secondCol, .thirdCol, .fourCol, .fiveCol, .sixCol{
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;   
 }
 
-.firstRow:hover, .secondRow:hover, .thirdRow:hover, .fourRow:hover, .fiveRow:hover, .sixRow:hover{
+.firstCol:hover, .secondCol:hover, .thirdCol:hover, .fourCol:hover, .fiveCol:hover, .sixCol:hover{
     background-color: #1B1924;
 }
 
-.firstR , .secondR , .thirdR , .fourR , .fiveR , .sixR{
+.firstC , .secondC , .thirdC , .fourC , .fiveC , .sixC{
     width: 75px;
     height: 75px;
     background-color: #BCA18D;
@@ -56,11 +56,11 @@ body{
     margin: 6px; 
 }
 
-.green{
+.yellow{
     background-color: #D9AC2A;
 }
 
-.red{
+.pink{
     background-color: #D50B53;
 }
 
@@ -154,4 +154,3 @@ body{
     letter-spacing: 1px;
     text-decoration:none;
 }
-
