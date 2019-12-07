@@ -34,6 +34,7 @@ var resultOne = 0;
 var resultTwo = 0;
 
 $(document).ready(function(){
+    
     $(".firstRow").click(function(){
         
             if (a == 0){
@@ -147,33 +148,33 @@ $(document).ready(function(){
         player();        
             for (var i = 0; i < arr.length; i++){
                 for (var j = 0; j < arr[i].length; j++){
-
-
+                    
                     //columns
                     if (($(arr[i][j]).hasClass("green")) && ($(arr[i][j+1]).hasClass("green")) &&
-                    ($(arr[i][j+2]).hasClass("green")) && ($(arr[i][j+3]).hasClass("green"))){
-                        resultFun("Lord Voldemort won", ".resultP1");
-
+                    ($(arr[i][j+2]).hasClass("green")) && ($(arr[i][j+3]).hasClass("green"))){                     
+                        resultFun("Lord Voldemort won :(", ".resultP1");
+                        
                     }
+
                     if (($(arr[i][j]).hasClass("red")) && ($(arr[i][j+1]).hasClass("red")) &&
-                    ($(arr[i][j+2]).hasClass("red")) && ($(arr[i][j+3]).hasClass("red"))){
+                    ($(arr[i][j+2]).hasClass("red")) && ($(arr[i][j+3]).hasClass("red"))){                       
                         resultFun("Albus Dumbledore won :)", ".resultP2");
                     }
                     
                     //Rows
                     if(($(arr[i][j]).hasClass("green")) && ($(arr[i+1][j]).hasClass("green")) &&
                         ($(arr[i+2][j]).hasClass("green")) && ($(arr[i+3][j]).hasClass("green"))){
-                        resultFun("Lord Voldemort won", ".resultP1");
+                        resultFun("Lord Voldemort won :(", ".resultP1");
 
                     }
                     if(($(arr[i][j]).hasClass("red")) && ($(arr[i+1][j]).hasClass("red")) &&
                     ($(arr[i+2][j]).hasClass("red")) && ($(arr[i+3][j]).hasClass("red"))){
                         resultFun("Albus Dumbledore won :)", ".resultP2");}
                     
-                    //from left to right
+                    //from left to right(diagonal)
                     if (($(arr[i][j]).hasClass("green")) && ($(arr[i+1][j+1]).hasClass("green")) &&
                     ($(arr[i+2][j+2]).hasClass("green")) && ($(arr[i+3][j+3]).hasClass("green"))){
-                        resultFun("Lord Voldemort won", ".resultP1");
+                        resultFun("Lord Voldemort won :(", ".resultP1");
 
                     }
                     if (($(arr[i][j]).hasClass("red")) && ($(arr[i+1][j+1]).hasClass("red")) &&
@@ -181,67 +182,72 @@ $(document).ready(function(){
                         resultFun("Albus Dumbledore won :)", ".resultP2");
                     }
 
-                    //from right to left
-                    if (($(arr[i][j]).hasClass("green")) && ($(arr[i-1][j+1]).hasClass("green")) &&
-                    ($(arr[i-2][j+2]).hasClass("green")) && ($(arr[i-3][j+3]).hasClass("green"))){
-                         resultFun("Lord Voldemort won", ".resultP1");
-                        }
-                    if (($(arr[i][j]).hasClass("red")) && ($(arr[i-1][j+1]).hasClass("red")) &&
-                        $((arr[i-2][j+2]).hasClass("red")) && ($(arr[i-3][j+3]).hasClass("red"))){
+                    //from right to left(diagonal)
+                    if (($(arr[i][j]).hasClass("green")) && ($(arr[i+1][j-1]).hasClass("green")) &&
+                    ($(arr[i+2][j-2]).hasClass("green")) && ($(arr[i+3][j-3]).hasClass("green"))){
+                        resultFun("Lord Voldemort won :(", ".resultP1");
+                    }
+                    if (($(arr[i][j]).hasClass("red")) && ($(arr[i+1][j-1]).hasClass("red")) && 
+                    ($(arr[i+2][j-2]).hasClass("red")) && ($(arr[i+3][j-3]).hasClass("red"))){
                         resultFun("Albus Dumbledore won :)", ".resultP2");
-                        }
-                                       
+                    }
                 }
             }           
     });
+
+    //////////////////////////////////////////////////////////
+    /*$(".startAgin").click(function(){
+        a = 0;
+        counterOne = 1;
+        counterTow = 7;
+        counterThree = 13;
+        counterFour = 19;
+        counterFive = 25;
+        counterSix = 31;
+        noWinOrLose = 0;
+        $(".phedar").text("Player One : Lord Voldemort").css("color","#D9AC2A");
+        $(".winnerp").text("");
+        $(".firstR").removeClass("red");
+        $(".firstR").removeClass("green");
+        $(".secondR").removeClass("red");
+        $(".secondR").removeClass("green");
+        $(".thirdR").removeClass("red");
+        $(".thirdR").removeClass("green");
+        $(".fourR").removeClass("red");
+        $(".fourR").removeClass("green");
+        $(".fiveR").removeClass("red");
+        $(".fiveR").removeClass("green");
+        $(".sixR").removeClass("red");
+        $(".sixR").removeClass("green");
+    });*/
 });
 
-function startAgin(){
-    a = 0;
-    counterOne = 1;
-    counterTow = 7;
-    counterThree = 13;
-    counterFour = 19;
-    counterFive = 25;
-    counterSix = 31;
-    noWinOrLose = 0;
-    $(".phedar").text("Player One : Lord Voldemort").css("color","#D9AC2A");
 
-    $(".firstR").removeClass("red");
-    $(".firstR").removeClass("green");
-    $(".secondR").removeClass("red");
-    $(".secondR").removeClass("green");
-    $(".thirdR").removeClass("red");
-    $(".thirdR").removeClass("green");
-    $(".fourR").removeClass("red");
-    $(".fourR").removeClass("green");
-    $(".fiveR").removeClass("red");
-    $(".fiveR").removeClass("green");
-    $(".sixR").removeClass("red");
-    $(".sixR").removeClass("green");
-}
 
-function resultFun(player, pClass){
-    alert(player);
-    if (a == 0){
+function resultFun(txt,pClass){
+    if (a == 1){
         if (resultOne == 0){
             resultOne = 1;
             $(pClass).text(resultOne);
-            startAgin();
-        } else if (resultOne >= 1){
-            resultOne++;
+            $(".firstRow , .secondRow , .thirdRow , .fourRow , .fiveRow , .sixRow").off("click");
+
+        } /*else if (resultOne >= 1){
             $(pClass).text(resultOne);
-            startAgin();
-        }
-    }if (a == 1){
+            $(".firstRow , .secondRow , .thirdRow , .fourRow , .fiveRow , .sixRow").off("click");
+        }*/
+        $(".winnerp").text(txt).css("color","#D9AC2A");
+
+    }if (a == 0){
         if (resultTwo == 0){
             resultTwo = 1;
             $(pClass).text(resultTwo);
-            startAgin();
-        } else if (resultTwo >= 1){
+            $(".firstRow , .secondRow , .thirdRow , .fourRow , .fiveRow , .sixRow").off("click");
+
+        } /*else if (resultTwo >= 1){
             resultTwo++;
             $(pClass).text(resultTwo);
-            startAgin();
-        }
+            $(".firstRow , .secondRow , .thirdRow , .fourRow , .fiveRow , .sixRow").off("click");
+        }*/
+        $(".winnerp").text(txt).css("color","#D50B53");
     }
 }

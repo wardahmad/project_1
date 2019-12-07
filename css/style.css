@@ -21,7 +21,6 @@ body{
 
 #playerinfo{
     background-color:#1B1924;
-    width: 40%;
 }
 
 #gameBord{
@@ -30,13 +29,12 @@ body{
     display: flex;
     justify-content: space-around;
     border-radius: 11%;
-
 }
 
 #footer{
     background-color: #03353E;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
 
 .firstRow, .secondRow, .thirdRow, .fourRow, .fiveRow, .sixRow{
@@ -96,8 +94,8 @@ body{
 
 .footSec{
     display: flex;
-    align-content: center;
-    justify-content: right;
+    /*align-content: center;
+    justify-content: right;*/
 }
 
 .phedar{
@@ -123,7 +121,8 @@ body{
 #result{
     display: flex;
     justify-content: center;
-
+    flex-direction: column;
+    margin: 50px;
 }
 
 .imgPla{
@@ -135,7 +134,6 @@ body{
 
 .CartInfo , .resultP1 , .resultP2 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
     color: #1B1924;
     margin-left:7px;;
 }
@@ -143,5 +141,17 @@ body{
 #copyR{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #BCA18D;
-
 }
+
+.winnerp{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+.restart{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #03353E;
+    letter-spacing: 1px;
+    text-decoration:none;
+}
+

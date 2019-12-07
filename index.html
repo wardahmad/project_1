@@ -18,6 +18,7 @@
     </section>
 
     <section id="container">
+
         <div id="gameBord">
             <div class="firstRow">
                 <div class="firstR" id="box1"></div>
@@ -72,6 +73,10 @@
                 <div class="sixR" id="box35"></div>
                 <div class="sixR" id="box36"></div>
             </div>
+
+            <audio autoplay>
+                <source src="sounds/ludovico.mp3" type="audio/mpeg">
+            </audio>
         </div>
 
         <div id="playerinfo"><br><br>
@@ -88,9 +93,12 @@
                 </div>
             </div>
 
-            <div id="result"><br><br>
-                <button type="button" onclick="startAgin()" id="restartB">Restart</button><br>
+            <div id="result">
                 
+                <button type="button" class="startAgin" id="restartB"><a href="index.html" class="restart">Restart</a></button><br>
+                <p class="winnerp"></p>
+                
+                   
             </div>
 
         </div>
@@ -98,15 +106,14 @@
 
     <section id="footer">
         <footer class="footSec">
-                <p id="copyR">Copyright 2019</p>
+            <p id="copyR">Copyright 2019</p>
             <a href="https://telegram.me/ward43" target="_blank"><img class="imgFooter" src="imgs/telegram.png"></a>
             <a href="https://twitter.com/Warda_A_A" target="_blank"><img class="imgFooter" src="imgs/twitter.png"></a>
             
         </footer>
     </section>
 </section>
-    
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="myscript.js"></script>
 </body>
