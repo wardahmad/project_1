@@ -281,7 +281,7 @@ function resultFun(txt,pClass){
         if (resultOne == 0){
             resultOne = 1;
             $(pClass).text(resultOne);
-            $(".firstCol , .secondCol , .thirdCol , .fourCol , .fiveCol , .sixCol").off("click");
+            $(".firstCol , .secondCol , .thirdCol , .fourCol , .fiveCol , .sixCol , .sevenCol , .eightCol").off("click");
 
         } /*else if (resultOne >= 1){
             $(pClass).text(resultOne);
@@ -293,7 +293,7 @@ function resultFun(txt,pClass){
         if (resultTwo == 0){
             resultTwo = 1;
             $(pClass).text(resultTwo);
-            $(".firstCol , .secondCol , .thirdCol , .fourCol , .fiveCol , .sixCol").off("click");
+            $(".firstCol , .secondCol , .thirdCol , .fourCol , .fiveCol , .sixCol , .sevenCol , .eightCol").off("click");
 
         } /*else if (resultTwo >= 1){
             resultTwo++;
