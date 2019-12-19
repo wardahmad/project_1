@@ -47,7 +47,7 @@ $(document).ready(function(){
                 noWinOrLose++;
                 a = 1;
                 $("<audio></audio>").attr({
-                    'src':'audio/something.mp3',
+                    'src':'audio/click.mp3',
                     'volume':0.4,
                     'autoplay':'autoplay'
                 }).appendTo("body");
@@ -59,6 +59,11 @@ $(document).ready(function(){
                 counterOne++;
                 noWinOrLose++;
                 a = 0;
+                $("<audio></audio>").attr({
+                    'src':'audio/click.mp3',
+                    'volume':0.4,
+                    'autoplay':'autoplay'
+                }).appendTo("body");
                 }
             }
     });
@@ -69,13 +74,24 @@ $(document).ready(function(){
             $("#box"+counterTow).addClass("yellow");
             counterTow++;
             noWinOrLose++;
-            a = 1;}
+            a = 1;
+            $("<audio></audio>").attr({
+                'src':'audio/click.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
+            }
         } else if (a == 1){
             if (counterTow <= 12){
             $("#box"+counterTow).addClass("pink");
             counterTow++;
             noWinOrLose++;
             a = 0;
+            $("<audio></audio>").attr({
+                'src':'audio/click.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
             }
         }
     });
@@ -87,6 +103,11 @@ $(document).ready(function(){
             counterThree++;
             noWinOrLose++;
             a = 1;
+            $("<audio></audio>").attr({
+                'src':'audio/click.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
             }
         }else if (a == 1){
             if (counterThree <= 18){
@@ -94,6 +115,11 @@ $(document).ready(function(){
             counterThree++;
             noWinOrLose++;
             a = 0;
+            $("<audio></audio>").attr({
+                'src':'audio/click.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
             }
         }
     });
@@ -105,6 +131,11 @@ $(document).ready(function(){
             counterFour++;
             noWinOrLose++;
             a = 1;
+            $("<audio></audio>").attr({
+                'src':'audio/click.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
             }
         }else if (a == 1){
             if (counterFour <= 24){
@@ -112,6 +143,11 @@ $(document).ready(function(){
             counterFour++;
             noWinOrLose++;
             a = 0;
+            $("<audio></audio>").attr({
+                'src':'audio/click.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
             }
         }
     });
@@ -122,6 +158,11 @@ $(document).ready(function(){
             counterFive++;
             noWinOrLose++;
             a = 1;
+            $("<audio></audio>").attr({
+                'src':'audio/click.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
             }
         }else if (a == 1){
             if (counterFive <= 30){
@@ -129,6 +170,11 @@ $(document).ready(function(){
             counterFive++;
             noWinOrLose++;
             a = 0;
+            $("<audio></audio>").attr({
+                'src':'audio/click.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
             }
         }
     });
@@ -140,6 +186,11 @@ $(document).ready(function(){
             counterSix++;
             noWinOrLose++;
             a = 1;
+            $("<audio></audio>").attr({
+                'src':'audio/click.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
             }
         }else if (a == 1){
             if (counterSix <= 36){
@@ -147,6 +198,11 @@ $(document).ready(function(){
             counterSix++;
             noWinOrLose++;
             a = 0;
+            $("<audio></audio>").attr({
+                'src':'audio/click.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
             }
         }
     });
@@ -158,6 +214,11 @@ $(document).ready(function(){
             counterSeven++;
             noWinOrLose++;
             a = 1;
+            $("<audio></audio>").attr({
+                'src':'audio/click.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
             }
         }else if (a == 1){
             if (counterSeven <= 42){
@@ -165,6 +226,11 @@ $(document).ready(function(){
             counterSeven++;
             noWinOrLose++;
             a = 0;
+            $("<audio></audio>").attr({
+                'src':'audio/click.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
             }
         }
     });
@@ -176,6 +242,11 @@ $(document).ready(function(){
             conterEight++;
             noWinOrLose++;
             a = 1;
+            $("<audio></audio>").attr({
+                'src':'audio/click.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
             }
         }else if (a == 1){
             if (conterEight <= 48){
@@ -183,6 +254,11 @@ $(document).ready(function(){
             conterEight++;
             noWinOrLose++;
             a = 0;
+            $("<audio></audio>").attr({
+                'src':'audio/click.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
             }
         }
     });
@@ -282,6 +358,11 @@ function resultFun(txt,pClass){
             resultOne = 1;
             $(pClass).text(resultOne);
             $(".firstCol , .secondCol , .thirdCol , .fourCol , .fiveCol , .sixCol , .sevenCol , .eightCol").off("click");
+            $("<audio></audio>").attr({
+                'src':'audio/win.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
 
         } /*else if (resultOne >= 1){
             $(pClass).text(resultOne);
@@ -294,6 +375,11 @@ function resultFun(txt,pClass){
             resultTwo = 1;
             $(pClass).text(resultTwo);
             $(".firstCol , .secondCol , .thirdCol , .fourCol , .fiveCol , .sixCol , .sevenCol , .eightCol").off("click");
+            $("<audio></audio>").attr({
+                'src':'audio/win.mp3',
+                'volume':0.4,
+                'autoplay':'autoplay'
+            }).appendTo("body");
 
         } /*else if (resultTwo >= 1){
             resultTwo++;

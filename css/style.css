@@ -90,12 +90,11 @@ body{
     width :25px ;
     height : 25px ;
     margin: 5px;
+    display: flex;
 }
-
+/*///////*/
 .footSec{
     display: flex;
-    /*align-content: center;
-    justify-content: right;*/
 }
 
 .phedar{
