@@ -52,7 +52,8 @@ var noWinOrLose = 0;
 var resultOne = 0;
 var resultTwo = 0;
 
-$(document).ready(function(){    
+$(document).ready(function(){
+        
     $(".firstCol").click(function(){
             if (a == 0){
                 if (counterOne <= 6){
