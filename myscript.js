@@ -6,10 +6,26 @@ function player(){
     }
     if (a == 0 ){
         $(".phedar").text("Player One : Lord Voldemort").css("color","#D9AC2A");
+        $("#playerOne").animate({opacity: 1,speed: "fast"});
+        $("#playerTwo").animate({opacity: '0.5',speed: "fast"});
+
     }else if (a == 1){
         $(".phedar").text("Player Two : Albus Dumbledore").css("color","#D50B53");
+        $("#playerOne").animate({opacity: '0.5',speed: "fast"});
+        $("#playerTwo").animate({opacity: 1,speed: "fast"});
     }
 }
+
+/*function addColor(box,counter,classColor,p,audio){
+    $(box+counter).addClass(classColor);
+    counter++;
+    noWinOrLose++;
+    a = p ;
+    $(audio).attr({
+        'src':'audio/click.mp3',
+        'volume':0.4,
+        'autoplay':'autoplay'}).appendTo("body");
+}*/
 
 var firstC = $(".firstC");
 var secondC = $(".secondC");
@@ -36,12 +52,11 @@ var noWinOrLose = 0;
 var resultOne = 0;
 var resultTwo = 0;
 
-$(document).ready(function(){
-    
+$(document).ready(function(){    
     $(".firstCol").click(function(){
-        
             if (a == 0){
                 if (counterOne <= 6){
+                    //addColor("#box",counterOne,"yellow",1,"<audio></audio>")
                 $("#box"+counterOne).addClass("yellow");
                 counterOne++;
                 noWinOrLose++;
@@ -55,6 +70,7 @@ $(document).ready(function(){
 
             }else if (a == 1){
                 if (counterOne <= 6){
+                    //addColor("#box",counterOne,"pink",0,"<audio></audio>")
                 $("#box"+counterOne).addClass("pink");
                 counterOne++;
                 noWinOrLose++;
@@ -263,7 +279,6 @@ $(document).ready(function(){
         }
     });
 
-    ////////////////////////////////
     $("#gameBord").click(function(){
         player();        
             for (var i = 0; i < arr.length; i++){
@@ -324,8 +339,6 @@ $(document).ready(function(){
                 }
             }           
     });
-
-    //////////////////////////////////////////////////////////
     /*$(".startAgin").click(function(){
         a = 0;
         counterOne = 1;
@@ -353,6 +366,9 @@ $(document).ready(function(){
 });
 
 function resultFun(txt,pClass){
+    $("#playerOne").animate({opacity: 1,speed: "fast"});
+    $("#playerTwo").animate({opacity: 1,speed: "fast"});
+    
     if (a == 1){
         if (resultOne == 0){
             resultOne = 1;
@@ -363,7 +379,6 @@ function resultFun(txt,pClass){
                 'volume':0.4,
                 'autoplay':'autoplay'
             }).appendTo("body");
-
         } /*else if (resultOne >= 1){
             $(pClass).text(resultOne);
             $(".firstCol , .secondCol , .thirdCol , .fourCol , .fiveCol , .sixCol").off("click");
@@ -380,7 +395,6 @@ function resultFun(txt,pClass){
                 'volume':0.4,
                 'autoplay':'autoplay'
             }).appendTo("body");
-
         } /*else if (resultTwo >= 1){
             resultTwo++;
             $(pClass).text(resultTwo);
