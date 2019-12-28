@@ -30,7 +30,8 @@ Make my site fully responsive so that it is playable from a mobile phone
 # Describe how you solved for the winner
 Using for loop with Two-Dimensional Arrays
 
-<img src="https://drive.google.com/file/d/1weDc0XJiBDmQttaRUNlb9dYezDVITBUu/view?usp=sharing">
+# Game Image 
+https://drive.google.com/file/d/1weDc0XJiBDmQttaRUNlb9dYezDVITBUu/view?usp=sharing
 
 # link of the game
 https://wardahmad.github.io/project_1/
