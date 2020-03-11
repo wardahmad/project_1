@@ -1,5 +1,6 @@
 <img align="center" src="imgs/logo-aa-2.png">
-# Project_1
+
+# #Project_1
 ## (Connect 4) Game
 
 Connect Four (also known as Captain's Mistress, Four Up, Plot Four, Find Four, Four in a Row, Four in a Line, Drop Four,and Gravitrips.
