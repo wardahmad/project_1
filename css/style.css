@@ -1,155 +1,191 @@
-body{
-    margin: 0;
-    background-color: #1B1924;
+body {
+  margin: 0;
+  background-color: #1b1924;
 }
 
-#mainContainer{
-    display: flex;
-    flex-direction:column;
+#mainContainer {
+  display: flex;
+  flex-direction: column;
 }
 
-#hedar{
-    background-color:#1B1924;
-    display: flex;
-    justify-content: center;
+#hedar {
+  background-color: #1b1924;
+  display: flex;
+  justify-content: center;
 }
 
-#container{
-    display: flex;
-    justify-content: space-around;
+#container {
+  display: flex;
+  justify-content: space-around;
 }
 
-#playerinfo{
-    background-color:#1B1924;
+#playerinfo {
+  background-color: #1b1924;
 }
 
-#gameBord{
-    background-color: #03353E;
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 7%;
+#gameBord {
+  background-color: #03353e;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 7%;
 }
 
-#footer{
-    background-color: #03353E;
-    display: flex;
-    justify-content: center;
+#footer {
+  background-color: #03353e;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: black;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.firstCol, .secondCol, .thirdCol, .fourCol, .fiveCol, .sixCol, .sevenCol, .eightCol{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;   
+.firstCol,
+.secondCol,
+.thirdCol,
+.fourCol,
+.fiveCol,
+.sixCol,
+.sevenCol,
+.eightCol {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
 }
 
-.firstCol:hover, .secondCol:hover, .thirdCol:hover, .fourCol:hover, .fiveCol:hover, .sixCol:hover, .sevenCol:hover, .eightCol:hover{
-    background-color: #1B1924;
+.firstCol:hover,
+.secondCol:hover,
+.thirdCol:hover,
+.fourCol:hover,
+.fiveCol:hover,
+.sixCol:hover,
+.sevenCol:hover,
+.eightCol:hover {
+  background-color: #1b1924;
 }
 
-.firstC , .secondC , .thirdC , .fourC , .fiveC , .sixC , .sevenC , .eightC{
-    width: 70px;
-    height: 70px;
-    background-color: #BCA18D;
-    border-radius: 50%;
-    display: flex;
-    margin: 6px; 
+.firstC,
+.secondC,
+.thirdC,
+.fourC,
+.fiveC,
+.sixC,
+.sevenC,
+.eightC {
+  width: 70px;
+  height: 70px;
+  background-color: #bca18d;
+  border-radius: 50%;
+  display: flex;
+  margin: 6px;
 }
 
-.yellow{
-    background-color: #D9AC2A;
+.yellow {
+  background-color: #d9ac2a;
 }
 
-.pink{
-    background-color: #D50B53;
+.pink {
+  background-color: #d50b53;
 }
 
-#player{
-    display: flex;
-    background-color:#1B1924;
-    justify-content: space-around;
-    height: 55%;
-    
+#player {
+  display: flex;
+  background-color: #1b1924;
+  justify-content: space-around;
+  height: 55%;
 }
 
-#playerOne{
-    background-color: #D9AC2A;
-    border-radius: 5%;
-    width: 40%;
-    height: 80%;
+#playerOne {
+  background-color: #d9ac2a;
+  border-radius: 5%;
+  width: 40%;
+  height: 80%;
 }
 
-#playerTwo{
-    background-color: #D50B53;
-    border-radius: 5%;
-    width: 40%;
-    height: 80%;
+#playerTwo {
+  background-color: #d50b53;
+  border-radius: 5%;
+  width: 40%;
+  height: 80%;
 }
 
-.imgFooter{
-    width :25px ;
-    height : 25px ;
-    margin: 5px;
-    display: flex;
+.imgFooter {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  display: flex;
 }
 /*///////*/
-.footSec{
-    display: flex;
+.footSec {
+  display: flex;
 }
 
-.phedar{
-    align-content: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #D9AC2A;
-    font-size: 20px;
-    align-content: center;
+.phedar {
+  align-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #d9ac2a;
+  font-size: 20px;
+  align-content: center;
 }
 
-#restartB{
-    background-color: #BCA18D;
-    border: none;
-    color: #03353E;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#restartB {
+  background-color: #bca18d;
+  border: none;
+  color: #03353e;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-#result{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 50px;
+#result {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px;
 }
 
-.imgPla{
-    width :75px;
-    height: 90px;
-    margin-left: 7px;
-    border-radius: 10%;
+.imgPla {
+  width: 75px;
+  height: 90px;
+  margin-left: 7px;
+  border-radius: 10%;
 }
 
-.CartInfo , .resultP1 , .resultP2 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #1B1924;
-    margin-left:7px;
+.CartInfo,
+.resultP1,
+.resultP2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #1b1924;
+  margin-left: 7px;
 }
 
-#copyR{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #BCA18D;
+#copyR {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #bca18d;
 }
 
-.winnerp{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
+.winnerp {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: large;
 }
 
-.restart{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #03353E;
-    letter-spacing: 1px;
-    text-decoration:none;
+.restart {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #03353e;
+  letter-spacing: 1px;
+  text-decoration: none;
 }

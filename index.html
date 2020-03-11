@@ -1,137 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Connect 4</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Connect 4</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
-</head>
-
-<body>
-<section id="mainContainer">
-    <section id="hedar">
+  <body>
+    <section id="mainContainer">
+      <section id="hedar">
         <header>
-            <p class="phedar">Player One : Lord Voldemort</p>
+          <p class="phedar">Player One : Lord Voldemort</p>
         </header>
-    </section>
+      </section>
 
-    <section id="container">
-
+      <section id="container">
         <div id="gameBord">
-            <div class="firstCol">
-                <div class="firstC" id="box1"></div>
-                <div class="firstC" id="box2"></div>
-                <div class="firstC" id="box3"></div>
-                <div class="firstC" id="box4"></div>
-                <div class="firstC" id="box5"></div>
-                <div class="firstC" id="box6"></div>
-            </div>
+          <div class="firstCol">
+            <div class="firstC" id="box1"></div>
+            <div class="firstC" id="box2"></div>
+            <div class="firstC" id="box3"></div>
+            <div class="firstC" id="box4"></div>
+            <div class="firstC" id="box5"></div>
+            <div class="firstC" id="box6"></div>
+          </div>
 
-            <div class="secondCol">
-                <div class="secondC" id="box7"></div>
-                <div class="secondC" id="box8"></div>
-                <div class="secondC" id="box9"></div>
-                <div class="secondC" id="box10"></div>
-                <div class="secondC" id="box11"></div>
-                <div class="secondC" id="box12"></div>               
-            </div>
+          <div class="secondCol">
+            <div class="secondC" id="box7"></div>
+            <div class="secondC" id="box8"></div>
+            <div class="secondC" id="box9"></div>
+            <div class="secondC" id="box10"></div>
+            <div class="secondC" id="box11"></div>
+            <div class="secondC" id="box12"></div>
+          </div>
 
-            <div class="thirdCol">
-                <div class="thirdC" id="box13"></div>
-                <div class="thirdC" id="box14"></div>
-                <div class="thirdC" id="box15"></div>
-                <div class="thirdC" id="box16"></div>
-                <div class="thirdC" id="box17"></div>
-                <div class="thirdC" id="box18"></div>
-            </div>
-    
-            <div class="fourCol">
-                <div class="fourC" id="box19"></div>
-                <div class="fourC" id="box20"></div>
-                <div class="fourC" id="box21"></div>
-                <div class="fourC" id="box22"></div>
-                <div class="fourC" id="box23"></div>
-                <div class="fourC" id="box24"></div>
+          <div class="thirdCol">
+            <div class="thirdC" id="box13"></div>
+            <div class="thirdC" id="box14"></div>
+            <div class="thirdC" id="box15"></div>
+            <div class="thirdC" id="box16"></div>
+            <div class="thirdC" id="box17"></div>
+            <div class="thirdC" id="box18"></div>
+          </div>
 
-            </div>
-            <div class="fiveCol">
-                <div class="fiveC" id="box25"></div>
-                <div class="fiveC" id="box26"></div>
-                <div class="fiveC" id="box27"></div>
-                <div class="fiveC" id="box28"></div>
-                <div class="fiveC" id="box29"></div>
-                <div class="fiveC" id="box30"></div>
-            </div>
+          <div class="fourCol">
+            <div class="fourC" id="box19"></div>
+            <div class="fourC" id="box20"></div>
+            <div class="fourC" id="box21"></div>
+            <div class="fourC" id="box22"></div>
+            <div class="fourC" id="box23"></div>
+            <div class="fourC" id="box24"></div>
+          </div>
+          <div class="fiveCol">
+            <div class="fiveC" id="box25"></div>
+            <div class="fiveC" id="box26"></div>
+            <div class="fiveC" id="box27"></div>
+            <div class="fiveC" id="box28"></div>
+            <div class="fiveC" id="box29"></div>
+            <div class="fiveC" id="box30"></div>
+          </div>
 
-            <div class="sixCol">
-                <div class="sixC" id="box31"></div>
-                <div class="sixC" id="box32"></div>
-                <div class="sixC" id="box33"></div>
-                <div class="sixC" id="box34"></div>
-                <div class="sixC" id="box35"></div>
-                <div class="sixC" id="box36"></div>
-            </div>
+          <div class="sixCol">
+            <div class="sixC" id="box31"></div>
+            <div class="sixC" id="box32"></div>
+            <div class="sixC" id="box33"></div>
+            <div class="sixC" id="box34"></div>
+            <div class="sixC" id="box35"></div>
+            <div class="sixC" id="box36"></div>
+          </div>
 
+          <div class="sevenCol">
+            <div class="sevenC" id="box37"></div>
+            <div class="sevenC" id="box38"></div>
+            <div class="sevenC" id="box39"></div>
+            <div class="sevenC" id="box40"></div>
+            <div class="sevenC" id="box41"></div>
+            <div class="sevenC" id="box42"></div>
+          </div>
 
-            <div class="sevenCol">
-                <div class="sevenC" id="box37"></div>
-                <div class="sevenC" id="box38"></div>
-                <div class="sevenC" id="box39"></div>
-                <div class="sevenC" id="box40"></div>
-                <div class="sevenC" id="box41"></div>
-                <div class="sevenC" id="box42"></div>
-            </div>
+          <div class="eightCol">
+            <div class="eightC" id="box43"></div>
+            <div class="eightC" id="box44"></div>
+            <div class="eightC" id="box45"></div>
+            <div class="eightC" id="box46"></div>
+            <div class="eightC" id="box47"></div>
+            <div class="eightC" id="box48"></div>
+          </div>
 
-            <div class="eightCol">
-                <div class="eightC" id="box43"></div>
-                <div class="eightC" id="box44"></div>
-                <div class="eightC" id="box45"></div>
-                <div class="eightC" id="box46"></div>
-                <div class="eightC" id="box47"></div>
-                <div class="eightC" id="box48"></div>
-            </div>
-
-            <audio id="test" autoplay loop>
-                <source src="audio/MaxRiven.mp3" type="audio/mpeg">
-            </audio>
+          <audio id="test" autoplay loop>
+            <source src="audio/MaxRiven.mp3" type="audio/mpeg" />
+          </audio>
         </div>
 
-        <div id="playerinfo"><br><br>
-            <div id="player">
-                <div id="playerOne"><br>
-                    <img src="imgs/full.jpg" class="imgPla">
-                    <p class="CartInfo">Player One : Lord Voldemort</p>
-                    <p class="resultP1">0</p>
-                </div>   
-                <div id="playerTwo"><br>
-                    <img src="imgs/AlbusDumbledore.jpg" class="imgPla">
-                    <p class="CartInfo">Player Two : Albus Dumbledore</p>
-                    <p class="resultP2">0</p>
-                </div>
+        <div id="playerinfo">
+          <br /><br />
+          <div id="player">
+            <div id="playerOne">
+              <br />
+              <img src="imgs/full.jpg" class="imgPla" />
+              <p class="CartInfo">Player One : Lord Voldemort</p>
+              <p class="resultP1">0</p>
             </div>
-
-            <div id="result">
-                <button type="button" class="startAgin" id="restartB"><a href="index.html" class="restart">Restart</a></button>
-                <p class="winnerp"></p>  
+            <div id="playerTwo">
+              <br />
+              <img src="imgs/AlbusDumbledore.jpg" class="imgPla" />
+              <p class="CartInfo">Player Two : Albus Dumbledore</p>
+              <p class="resultP2">0</p>
             </div>
+          </div>
 
+          <div id="result">
+            <button type="button" class="startAgin" id="restartB">
+              <a href="index.html" class="restart">Restart</a>
+            </button>
+            <p class="winnerp"></p>
+          </div>
         </div>
-    </section><br>
+      </section>
+      <br />
 
-    <section id="footer">
+      <section id="footer">
         <footer class="footSec">
-            <p id="copyR">Copyright 2019</p>
-            <a href="https://github.com/wardahmad" target="_blank"><img class="imgFooter" src="imgs/github.png"></a>
-            <a href="https://www.linkedin.com/in/wardaahmad43/" target="_blank"><img class="imgFooter" src="imgs/linkedin.png"></a>
-            <a href="https://twitter.com/Warda_A_A" target="_blank"><img class="imgFooter" src="imgs/twitter.png"></a>  
+          <p id="copyR">Copyright 2019</p>
+          <a href="https://github.com/wardahmad" target="_blank"
+            ><img class="imgFooter" src="imgs/github.png"
+          /></a>
+          <a href="https://www.linkedin.com/in/wardaahmad43/" target="_blank"
+            ><img class="imgFooter" src="imgs/linkedin.png"
+          /></a>
+          <a href="https://twitter.com/Warda_A_A" target="_blank"
+            ><img class="imgFooter" src="imgs/twitter.png"
+          /></a>
         </footer>
+      </section>
     </section>
-</section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="myscript.js"></script>
-</body>
-
+  </body>
 </html>
