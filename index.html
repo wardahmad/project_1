@@ -178,10 +178,10 @@
           
           const params = new URLSearchParams({ message });
           const res = await fetch(`https://wardahmad.github.io/project_1/?${params}`);
-          if (!res.ok) {
-            throw new Error(`${res.status}: ${await res.text()}`) ;
-          }
-          const data = await res.json();
+          // if (!res.ok) {
+          //   throw new Error(`${res.status}: ${await res.text()}`) ;
+          // }
+          // const data = await res.json();
         }
       });
     </script>
