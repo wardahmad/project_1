@@ -119,6 +119,14 @@
         </div>
 
         <div id="playerinfo">
+          <!-- Input / search -->
+          <!-- <form action="/action_page.php">
+            <label for="search">Search</label>
+            <input type="text" id="searchInput" name="search"><br><br>
+          </form> -->
+          <input type="text" id="text">
+          <button id="send">Send</button>
+
           <br /><br />
           <div id="player">
             <div id="playerOne">
@@ -161,6 +169,23 @@
       </section>
     </section>
 
+
+    <script>
+      document.getElementById("send").addEventListener("click", async (e) => {
+        e.preventDefault();
+        const message = document.getElementById("text").value;
+        if (message) {
+          
+          const params = new URLSearchParams({ message });
+          const res = await fetch(`https://wardahmad.github.io/project_1/?${params}`);
+          if (!res.ok) {
+            throw new Error(`${res.status}: ${await res.text()}`) ;
+          }
+          const data = await res.json();
+        }
+      });
+    </script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="myscript.js"></script>
   </body>
