@@ -1,16 +1,16 @@
-document.getElementById("send").addEventListener("click", async (e) => {
-  e.preventDefault();
-  const message = document.getElementById("text").value;
-  if (message) {
+// document.getElementById("send").addEventListener("click", async (e) => {
+//   e.preventDefault();
+//   const message = document.getElementById("text").value;
+//   if (message) {
     
-    const params = new URLSearchParams({ message });
-    const res = await fetch(`https://wardahmad.github.io/project_1/?${params}`);
-    if (!res.ok) {
-      throw new Error(`${res.status}: ${await res.text()}`) ;
-    }
-    const data = await res.json();
-  }
-});
+//     const params = new URLSearchParams({ message });
+//     const res = await fetch(`https://wardahmad.github.io/project_1/?${params}`);
+//     if (!res.ok) {
+//       throw new Error(`${res.status}: ${await res.text()}`) ;
+//     }
+//     const data = await res.json();
+//   }
+// });
 
 function player() {
   if (noWinOrLose === 48) {
